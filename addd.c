@@ -1,9 +1,9 @@
 #include "monty.h"
 /**
- * _addd - adds the top two elements  stack.
- * @h:  head of the stackk
- * @c: number of the line
-*/
+ * _addd - add to stack.
+ * @h:  head
+ * @c: counter
+ */
 void _addd(stack_t **h, unsigned int c)
 {
 	stack_t *he;
@@ -13,7 +13,7 @@ void _addd(stack_t **h, unsigned int c)
 	he = *h;
 	while (he)
 	{
-		he = he->next;
+		he = (stack_t*)he->next;
 		len++;
 	}
 	if (len < 2)

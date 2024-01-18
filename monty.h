@@ -10,7 +10,7 @@
 #include <unistd.h>
 
 /**
- * struct stack_s - dll stack or queue.
+ * struct st - dll stack or queue.
  * @n: int.
  * @prev: previous element of stack
  * @next: next element of stack
@@ -20,8 +20,8 @@
 typedef struct st
 {
 	int n;
-	struct stack_s *prev;
-	struct stack_s *next;
+	struct st *prev;
+	struct st *next;
 } stack_t;
 
 /**
@@ -68,7 +68,7 @@ void _pintt(stack_t **h, unsigned int c);
 void _nop(stack_t **h, unsigned int c);
 void addnode(stack_t **h, int n);
 void addqueue(stack_t **h, int n);
-void f_queue(stack_t **h, unsigned int c);
-void f_stack(stack_t **h, unsigned int c);
+void _queue(stack_t **h, unsigned int c);
+void _stack(stack_t **h, unsigned int c);
 
 #endif
