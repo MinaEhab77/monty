@@ -20,8 +20,8 @@
 typedef struct st
 {
 	int n;
-	struct stack_s *prev;
-	struct stack_s *next;
+	struct st *prev;
+	struct st *next;
 } stack_t;
 
 /**
