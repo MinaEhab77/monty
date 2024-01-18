@@ -8,7 +8,7 @@
 * @content: line_content
 */
 
-int executee(char *content, stack_t **stack, unsigned int counter, FILE *file)
+int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 {
 	instruction_t opst[] = {
 				{"push", _push}, {"pall", _pall}, {"pint", _pintt},
