@@ -54,7 +54,7 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-int execute(char *content, stack_t **h, unsigned int c, FILE *file);
+int executee(char *content, stack_t **h, unsigned int c, FILE *file);
 void free_stack(stack_t *h);
 void _pop(stack_t **h, unsigned int c);
 void _swap(stack_t **h, unsigned int c);
